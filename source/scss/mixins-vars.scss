@@ -1,0 +1,53 @@
+$main-color: #212353;
+$text-color: #4B5D68;
+$hover-color: #9C69E2;
+
+/*media */
+$tablet: 760px;
+$mid: 992px;
+$desktop: 1300px;
+
+@mixin hover {
+	transition: color .5s;
+ 	&:hover {
+ 		color: $hover-color;
+ 	}
+}
+
+@mixin logo {
+	rect {
+		transition: fill .5s;
+	}
+	&:hover rect {
+		&:nth-of-type(1) {
+			fill: #F063B8;
+		}
+		&:nth-of-type(2) {
+			fill: #9C69E2;
+		}
+	}
+}
+
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}

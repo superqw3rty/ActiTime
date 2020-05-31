@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<meta name="description" content="Someap - Vladimir Gosudarev testwork ">
+	<meta name="robots" content="index,follow">
+	<title>SomeApp</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<header class="header">
+			<a href="" class="header__logo">
+				<svg width="49" height="35" viewBox="0 0 49 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__logo-img">
+					<rect y="15" width="20" height="20" rx="10" fill="#9C69E2"/>
+					<rect x="29" width="20" height="35" rx="10" fill="#F063B8"/>
+				</svg>
+			</a>
+
+			<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__menu-burger">
+				<g class="header__menu-burger--norm">
+					<rect width="36" height="3" rx="1.5" fill="#212353" />
+					<rect y="10.5" width="36" height="3" rx="1.5" fill="#212353" />
+					<rect y="21" width="36" height="3" rx="1.5" fill="#212353" />
+				</g>
+
+				<g class="header__menu-burger--cross">
+					<line x1="8" y1="0" x2="34" y2="24" stroke="3"></line>					
+					<line x1="8" y1="24" x2="34" y2="0" stroke="3" ></line>
+				</g>
+
+			</svg>
+
+			<div class="header__menu-wrapper">
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="" class="header__nav-link">About</a>
+						</li>
+						<li class="header__nav-item header__nav-item--dropdown">
+							<span class="header__nav-link header__nav-link--dropdown">Help</span>
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__nav-link-arrow">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M9.69775 5.91751C9.30913 6.29746 8.6882 6.29746 8.29958 5.91751L2.94876 0.686089C2.56014 0.306143 1.93921 0.306144 1.5506 0.68609L0.73136 1.48705C0.330139 1.87931 0.330139 2.52486 0.731361 2.91712L8.29963 10.3165C8.68825 10.6965 9.30918 10.6965 9.6978 10.3165L11.2484 8.80054C11.2484 8.80053 11.2484 8.80051 11.2484 8.8005C11.2484 8.80048 11.2484 8.80046 11.2484 8.80045L17.2686 2.91452C17.6699 2.52225 17.6699 1.87671 17.2686 1.48444L16.4494 0.683481C16.0608 0.303534 15.4399 0.303534 15.0512 0.683482L9.69775 5.91751Z" fill="#212353"/>
+							</svg>
+
+							<ul class="header__dropdown">
+								<li class="header__dropdown-item">
+									<a href="" class="header__dropdown-link">User Guide</a>
+								</li>
+								<li class="header__dropdown-item">
+									<a href="" class="header__dropdown-link">Contact Support</a>
+								</li>
+							</ul>
+						</li>
+						<li class="header__nav-item">
+							<a href="" class="header__nav-link">Features</a>
+						</li>
+					</ul>
+				</nav>
+
+				<button class="header__signup-btn">Sign Up</button>
+			</div>
+		</header>
+
+		<main  class="main">
+			<section class="features">
+				<h1 class="features__heading">Features</h1>
+				<p class="features__subheading">
+					Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.
+				</p>
+
+				<div class="features__slider">
+					
+					<div class="features__slider-items-wrapper">
+						<div class="features__slider-item">
+							<h2 class="features__slider-heading">First Feature</h2>
+							<p class="features__slider-text">
+								Little Red Cap opened her eyes and when she saw the sunbeams dancing to and fro through the trees and how the ground was covered with beautiful flowers.
+							</p>
+							<a href="" class="features__slider-link">Learn more</a>
+						</div>
+
+						<div class="features__slider-item">
+							<h2 class="features__slider-heading">Second Feature</h2>
+							<p class="features__slider-text">
+								Each time she picked one she thought that she could see an even more beautiful one a little way off, and she ran after it, going further and further into the woods.
+							</p>
+							<a href="" class="features__slider-link">Learn more</a>
+						</div>
+
+						<div class="features__slider-item">
+							<h2 class="features__slider-heading">Third Feature</h2>
+							<p class="features__slider-text">
+								The wolf pressed the latch, and the door opened. He stepped inside, went straight to the grandmother's bed, and ate her up.
+							</p>
+							<a href="" class="features__slider-link">Learn more</a>
+						</div>
+
+						<div class="features__slider-item features__slider-item--new">
+							<h2 class="features__slider-heading">Fourth Feature</h2>
+							<p class="features__slider-text">
+								Little Red Cap had run after the flowers. After she had gathered so many that she could not carry any more, she remembered her grandmother.
+							</p>
+							<a href="" class="features__slider-link">Learn more</a>
+						</div>
+					</div>
+
+					<ul class="fetures__slider-controls">
+						<li class="features__slider-control-item features__slider-control-item--active" data-number="0"></li>
+						<li class="features__slider-control-item" data-show="" data-number="1"></li>
+						<li class="features__slider-control-item"  data-number="2"></li>
+						<li class="features__slider-control-item" data-show="" data-number="3"></li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<a href="" class="footer__logo-link">
+				<svg width="49" height="35" viewBox="0 0 49 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__logo-img">
+					<rect y="15" width="20" height="20" rx="10" fill="#fff"/>
+					<rect x="29" width="20" height="35" rx="10" fill="#fff"/>
+				</svg>
+			</a>
+
+			<div class="footer__info-block">
+				<a href="" class="footer__info-link">About Us</a>
+				<a href="" class="footer__info-link">Privacy Policy</a>
+			</div>
+
+			<form action="" class="footer__form" method="post">
+				<input type="text" class="footer__form-input" placeholder="Enter your email">
+				<button class="footer__form-btn">Sign Up Now</button>
+			</form>
+		</div>
+	</footer>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
