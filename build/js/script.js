@@ -56,7 +56,7 @@ document.addEventListener('click', function(e) {
 	if(document.documentElement.clientWidth < 1300 ) {
 		if (e.target === dropdownBtn || e.target === dropdownArrow) {
 			let arrowClasses = dropdownArrow.getAttribute('class');
-			console.log(arrowClasses)
+
 			if (!dropdown.classList.contains('header__dropdown--opened')) {
 				dropdown.classList.add('header__dropdown--opened');
 				dropdownArrow.setAttribute('class', arrowClasses + ' header__nav-link-arrow--opened');
